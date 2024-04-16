@@ -1,0 +1,94 @@
+[gd_scene load_steps=21 format=3 uid="uid://b42w1wdbdk7r"]
+
+[ext_resource type="Texture2D" uid="uid://bo5r2xiwpugxs" path="res://assets/memes/images/multi images/zoro/frame_00_delay-0.03s.png" id="1_0wabj"]
+[ext_resource type="Script" path="res://scenes/vault/zoro/zoro.gd" id="1_qkd4o"]
+[ext_resource type="Texture2D" uid="uid://bkuos3tur2xjq" path="res://assets/memes/images/multi images/zoro/frame_01_delay-0.04s.png" id="2_velua"]
+[ext_resource type="Texture2D" uid="uid://xtq70ed03fgh" path="res://assets/memes/images/multi images/zoro/frame_02_delay-0.03s.png" id="3_foy8y"]
+[ext_resource type="Texture2D" uid="uid://d0o46a0kqccjr" path="res://assets/memes/images/multi images/zoro/frame_03_delay-0.03s.png" id="4_75tvw"]
+[ext_resource type="Texture2D" uid="uid://tr3ebkhv4pmb" path="res://assets/memes/images/multi images/zoro/frame_04_delay-0.04s.png" id="5_eqvu4"]
+[ext_resource type="Texture2D" uid="uid://bxittch70rf0k" path="res://assets/memes/images/multi images/zoro/frame_05_delay-0.03s.png" id="6_ck68v"]
+[ext_resource type="Texture2D" uid="uid://cl0aoe3raltct" path="res://assets/memes/images/multi images/zoro/frame_06_delay-0.03s.png" id="7_4sdgw"]
+[ext_resource type="Texture2D" uid="uid://c1pkmgbj3qj0c" path="res://assets/memes/images/multi images/zoro/frame_07_delay-0.04s.png" id="8_2utsn"]
+[ext_resource type="Texture2D" uid="uid://cp85yxga6q7j7" path="res://assets/memes/images/multi images/zoro/frame_08_delay-0.03s.png" id="9_kxfmp"]
+[ext_resource type="Texture2D" uid="uid://dxg74j5s8o1k8" path="res://assets/memes/images/multi images/zoro/frame_09_delay-0.03s.png" id="10_nyq13"]
+[ext_resource type="Texture2D" uid="uid://cxnvpeektgjho" path="res://assets/memes/images/multi images/zoro/frame_10_delay-0.04s.png" id="11_i7w6q"]
+[ext_resource type="Texture2D" uid="uid://cqyhier0i1d8w" path="res://assets/memes/images/multi images/zoro/frame_11_delay-0.03s.png" id="12_i80jj"]
+[ext_resource type="Texture2D" uid="uid://jbjofnmsice0" path="res://assets/memes/images/multi images/zoro/frame_12_delay-0.03s.png" id="13_h3oe7"]
+[ext_resource type="Texture2D" uid="uid://c2l27mj0j0usi" path="res://assets/memes/images/multi images/zoro/frame_13_delay-0.04s.png" id="14_n75r1"]
+[ext_resource type="Texture2D" uid="uid://ceskgof6eiaty" path="res://assets/memes/images/multi images/zoro/frame_14_delay-0.03s.png" id="15_tvk1j"]
+[ext_resource type="Texture2D" uid="uid://cx31hfejmikaf" path="res://assets/memes/images/multi images/zoro/frame_15_delay-0.03s.png" id="16_ac2ii"]
+[ext_resource type="Texture2D" uid="uid://5x4ryqp75y06" path="res://assets/memes/images/multi images/zoro/frame_16_delay-0.04s.png" id="17_v2b6f"]
+[ext_resource type="Texture2D" uid="uid://wdvtrwdnvspa" path="res://assets/memes/images/multi images/zoro/frame_17_delay-0.04s.png" id="18_40kjm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ea0sd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0wabj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_velua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_foy8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_75tvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eqvu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ck68v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4sdgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2utsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_kxfmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_nyq13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i7w6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_i80jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_h3oe7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_n75r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_tvk1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ac2ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_v2b6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_40kjm")
+}],
+"loop": true,
+"name": &"zoro",
+"speed": 30.0
+}]
+
+[node name="zoro" type="Node2D"]
+script = ExtResource("1_qkd4o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(3.85542, 3.84342)
+sprite_frames = SubResource("SpriteFrames_ea0sd")
+animation = &"zoro"
+autoplay = "zoro"
+frame_progress = 0.874684

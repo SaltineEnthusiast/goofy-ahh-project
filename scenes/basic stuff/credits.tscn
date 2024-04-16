@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://y5xy05e3as6s"]
+
+[ext_resource type="Script" path="res://scenes/basic stuff/credits.gd" id="1_0ih6v"]
+[ext_resource type="Texture2D" uid="uid://be3yd4vtsdrx1" path="res://assets/images/images/icon.svg" id="2_vocfk"]
+[ext_resource type="FontFile" uid="uid://ct8xlyjlgpms5" path="res://assets/fonts/RAVIE.TTF" id="3_5wvwp"]
+[ext_resource type="Theme" uid="uid://bacgw44syfs43" path="res://assets/godot stuff/themes/settings.tres" id="4_3xllv"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_74dmj"]
+blend_mode = 1
+light_mode = 2
+
+[node name="credits" type="Node2D"]
+script = ExtResource("1_0ih6v")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(130, 130)
+scale = Vector2(2, 2)
+texture = ExtResource("2_vocfk")
+
+[node name="Label" type="Label" parent="."]
+offset_top = 110.0
+offset_right = 1920.0
+offset_bottom = 547.0
+theme_override_fonts/font = ExtResource("3_5wvwp")
+theme_override_font_sizes/font_size = 75
+text = "Credits:
+Vinh - coding, music, 
+concepts, host
+Sebastian - coding, concepts
+Noah - music
+Issac - art"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 700.0
+offset_right = 1100.0
+offset_bottom = 833.0
+theme = ExtResource("4_3xllv")
+theme_override_font_sizes/font_size = 40
+text = "back"
+
+[node name="Button2" type="Button" parent="."]
+material = SubResource("CanvasItemMaterial_74dmj")
+offset_right = 258.0
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 40
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://dsv3j0dedu688"]
+
+[resource]
+bg_color = Color(0, 0.6, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0.639216, 0, 0.6)
+shadow_size = 25

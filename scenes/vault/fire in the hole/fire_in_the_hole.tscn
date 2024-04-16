@@ -1,0 +1,178 @@
+[gd_scene load_steps=12 format=3 uid="uid://msw3v7m8irfx"]
+
+[ext_resource type="Script" path="res://scenes/vault/fire in the hole/fire_in_the_hole.gd" id="1_4ewhx"]
+[ext_resource type="Texture2D" uid="uid://dfksc56y0ie8i" path="res://assets/memes/images/images/normal-difficulty-geometry-dash-removebg-preview.png" id="2_ijsg3"]
+[ext_resource type="Shader" path="res://assets/godot stuff/shaders/shockwave.gdshader" id="3_1u2wu"]
+[ext_resource type="Theme" uid="uid://cbhog5hkho80u" path="res://assets/memes/godot stuff/lobotomy.tres" id="3_8p03m"]
+[ext_resource type="AudioStream" uid="uid://cvkob1dhq0yb7" path="res://assets/memes/audio/sfx/Fire In The Hole Sound Effect.mp3" id="4_nlvye"]
+[ext_resource type="AudioStream" uid="uid://e41yjb46ncrl" path="res://assets/memes/audio/sfx/Fire In The Hole Low.mp3" id="5_ua53m"]
+[ext_resource type="AudioStream" uid="uid://dhvlg7olv0ho2" path="res://assets/memes/audio/sfx/High Pitch FIRE IN THE HOLE Sound Effect.mp3" id="6_x12oj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fgf0k"]
+shader = ExtResource("3_1u2wu")
+shader_parameter/center = Vector2(0.5, 0.5)
+shader_parameter/force = 0.0
+shader_parameter/size = 1.0
+shader_parameter/thickness = 0.11
+
+[sub_resource type="Animation" id="Animation_t25dn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/force")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:material:shader_parameter/size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_14fx3"]
+resource_name = "shock"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/force")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.15]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:material:shader_parameter/size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qtujw"]
+_data = {
+"RESET": SubResource("Animation_t25dn"),
+"shock": SubResource("Animation_14fx3")
+}
+
+[node name="fire in the hole" type="Node2D"]
+script = ExtResource("1_4ewhx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 775.0
+offset_top = 350.0
+offset_right = 1135.0
+offset_bottom = 710.0
+texture = ExtResource("2_ijsg3")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 444.0
+offset_top = 36.0
+offset_right = 804.0
+offset_bottom = 396.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ijsg3")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 1291.0
+offset_top = 34.0
+offset_right = 1651.0
+offset_bottom = 394.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ijsg3")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 350.0
+offset_top = 800.0
+offset_right = 650.0
+offset_bottom = 934.0
+theme = ExtResource("3_8p03m")
+theme_override_font_sizes/font_size = 40
+text = "Lobotomy"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 800.0
+offset_right = 1100.0
+offset_bottom = 934.0
+theme = ExtResource("3_8p03m")
+theme_override_font_sizes/font_size = 40
+text = "Lobotomy"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 1250.0
+offset_top = 800.0
+offset_right = 1550.0
+offset_bottom = 934.0
+theme = ExtResource("3_8p03m")
+theme_override_font_sizes/font_size = 40
+text = "Lobotomy"
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 223.0
+theme_override_font_sizes/font_size = 80
+text = "pick a lobotomy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_fgf0k")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_qtujw")
+}
+autoplay = "shock"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("4_nlvye")
+volume_db = 10.0
+bus = &"sfx"
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("5_ua53m")
+volume_db = 10.0
+bus = &"sfx"
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("6_x12oj")
+volume_db = 10.0
+bus = &"sfx"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

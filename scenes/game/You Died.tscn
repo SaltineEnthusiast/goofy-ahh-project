@@ -1,0 +1,204 @@
+[gd_scene load_steps=43 format=3 uid="uid://bmd5cfxo5hujo"]
+
+[ext_resource type="Script" path="res://scenes/game/You Died.gd" id="1_7lpqs"]
+[ext_resource type="Texture2D" uid="uid://dn7uha3jvpy63" path="res://assets/memes/images/multi images/Combat BG/frame_00_delay-0.03s.png" id="1_hyx76"]
+[ext_resource type="Texture2D" uid="uid://dne4w7lrmpuws" path="res://assets/memes/images/multi images/Combat BG/frame_02_delay-0.03s.png" id="2_a3fj5"]
+[ext_resource type="Texture2D" uid="uid://bbpx64emd1stp" path="res://assets/memes/images/multi images/Combat BG/frame_04_delay-0.03s.png" id="3_iqmg0"]
+[ext_resource type="Texture2D" uid="uid://civ3mohtjwoom" path="res://assets/memes/images/multi images/Combat BG/frame_06_delay-0.03s.png" id="4_pq0ao"]
+[ext_resource type="Texture2D" uid="uid://cjqov4kfo2csq" path="res://assets/memes/images/multi images/Combat BG/frame_08_delay-0.03s.png" id="5_2c3is"]
+[ext_resource type="Texture2D" uid="uid://dsht85p75qbvd" path="res://assets/memes/images/multi images/Combat BG/frame_10_delay-0.03s.png" id="6_7513w"]
+[ext_resource type="Texture2D" uid="uid://dc3i6qtq7mdti" path="res://assets/memes/images/multi images/Combat BG/frame_12_delay-0.03s.png" id="7_3mubl"]
+[ext_resource type="Texture2D" uid="uid://vl13i0un4evb" path="res://assets/memes/images/multi images/Combat BG/frame_14_delay-0.03s.png" id="8_m8p4o"]
+[ext_resource type="Texture2D" uid="uid://dcs148cu8up7l" path="res://assets/memes/images/multi images/Combat BG/frame_16_delay-0.03s.png" id="9_jxvhf"]
+[ext_resource type="Texture2D" uid="uid://kr3rlai3let0" path="res://assets/memes/images/multi images/Combat BG/frame_18_delay-0.03s.png" id="10_5j03l"]
+[ext_resource type="Texture2D" uid="uid://bhu5baf11i3v0" path="res://assets/memes/images/multi images/Combat BG/frame_20_delay-0.03s.png" id="11_i73fm"]
+[ext_resource type="Texture2D" uid="uid://bn8do6u68sy68" path="res://assets/memes/images/multi images/Combat BG/frame_22_delay-0.03s.png" id="12_wwli7"]
+[ext_resource type="Texture2D" uid="uid://d3vcil2np40ba" path="res://assets/memes/images/multi images/Combat BG/frame_24_delay-0.03s.png" id="13_heqmv"]
+[ext_resource type="Texture2D" uid="uid://x77bfqfs812b" path="res://assets/memes/images/multi images/Combat BG/frame_26_delay-0.03s.png" id="14_1k8wp"]
+[ext_resource type="Texture2D" uid="uid://drbgmjp5qabat" path="res://assets/memes/images/multi images/Combat BG/frame_28_delay-0.03s.png" id="15_q2s2c"]
+[ext_resource type="Texture2D" uid="uid://cjyeg0dqtawrv" path="res://assets/memes/images/multi images/Combat BG/frame_30_delay-0.03s.png" id="16_48f7l"]
+[ext_resource type="Texture2D" uid="uid://bpyvjanue8wnj" path="res://assets/memes/images/multi images/Combat BG/frame_32_delay-0.03s.png" id="17_42ima"]
+[ext_resource type="Texture2D" uid="uid://0cp2qj1nlcjf" path="res://assets/memes/images/multi images/Combat BG/frame_34_delay-0.03s.png" id="18_7jbud"]
+[ext_resource type="Texture2D" uid="uid://b5gg7jofkcbs1" path="res://assets/memes/images/multi images/Combat BG/frame_36_delay-0.03s.png" id="19_p4ghg"]
+[ext_resource type="Texture2D" uid="uid://dg6bir0yhuwn5" path="res://assets/memes/images/multi images/Combat BG/frame_37_delay-0.03s.png" id="20_yroq0"]
+[ext_resource type="Texture2D" uid="uid://ca8fnyj7upqmv" path="res://assets/memes/images/multi images/Combat BG/frame_38_delay-0.03s.png" id="21_b6tbf"]
+[ext_resource type="Texture2D" uid="uid://dhsvism68fg4c" path="res://assets/memes/images/multi images/Combat BG/frame_39_delay-0.03s.png" id="22_eo3sx"]
+[ext_resource type="Texture2D" uid="uid://cjl78tr5i2foq" path="res://assets/memes/images/multi images/Combat BG/frame_40_delay-0.03s.png" id="23_d133g"]
+[ext_resource type="Texture2D" uid="uid://c6y384hux1eky" path="res://assets/memes/images/multi images/Combat BG/frame_41_delay-0.03s.png" id="24_e5ftr"]
+[ext_resource type="Texture2D" uid="uid://0xa7uhc5rugd" path="res://assets/memes/images/multi images/Combat BG/frame_42_delay-0.03s.png" id="25_wr3m3"]
+[ext_resource type="Texture2D" uid="uid://djjru0klvmtok" path="res://assets/memes/images/multi images/Combat BG/frame_43_delay-0.03s.png" id="26_jyg20"]
+[ext_resource type="Texture2D" uid="uid://b8rngj4spkomq" path="res://assets/memes/images/multi images/Combat BG/frame_44_delay-0.03s.png" id="27_p702y"]
+[ext_resource type="Texture2D" uid="uid://c7w5kp2p85ymj" path="res://assets/memes/images/multi images/Combat BG/frame_45_delay-0.03s.png" id="28_vpigb"]
+[ext_resource type="Texture2D" uid="uid://bockfvl4f1b0d" path="res://assets/memes/images/multi images/Combat BG/frame_46_delay-0.03s.png" id="29_kv1ep"]
+[ext_resource type="Texture2D" uid="uid://drsjtu8lgwqqs" path="res://assets/memes/images/multi images/Combat BG/frame_47_delay-0.03s.png" id="30_fxci7"]
+[ext_resource type="Texture2D" uid="uid://bv7ylwumlj4wb" path="res://assets/memes/images/multi images/Combat BG/frame_48_delay-0.03s.png" id="31_78jet"]
+[ext_resource type="Texture2D" uid="uid://dcbk3psnxtllt" path="res://assets/memes/images/multi images/Combat BG/frame_49_delay-0.03s.png" id="32_76o06"]
+[ext_resource type="Texture2D" uid="uid://cqbjvyga8e6i4" path="res://assets/memes/images/multi images/Combat BG/frame_50_delay-0.03s.png" id="33_ib75y"]
+[ext_resource type="Texture2D" uid="uid://cgxngwqia7m3a" path="res://assets/memes/images/multi images/Combat BG/frame_51_delay-0.03s.png" id="34_2jfs7"]
+[ext_resource type="Texture2D" uid="uid://erboblr407n6" path="res://assets/memes/images/multi images/Combat BG/frame_52_delay-0.03s.png" id="35_2ljmn"]
+[ext_resource type="Texture2D" uid="uid://c58ndlcyfcipj" path="res://assets/memes/images/multi images/Combat BG/frame_54_delay-0.03s.png" id="36_cvso0"]
+[ext_resource type="Texture2D" uid="uid://cl2lbicm3ndow" path="res://assets/memes/images/multi images/Combat BG/frame_56_delay-0.03s.png" id="37_wadjy"]
+[ext_resource type="FontFile" uid="uid://ct8xlyjlgpms5" path="res://assets/fonts/RAVIE.TTF" id="38_yhocy"]
+[ext_resource type="AudioStream" uid="uid://cuv3yycny5sjm" path="res://assets/memes/audio/music/Goofy_Ahh_Type_Beat_Part_2_Bababooey_Phonk.mp3" id="39_pwg54"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ewumr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hyx76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_a3fj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iqmg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pq0ao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2c3is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7513w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3mubl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m8p4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jxvhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5j03l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i73fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wwli7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_heqmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1k8wp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_q2s2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_48f7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_42ima")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7jbud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_p4ghg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yroq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_b6tbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_eo3sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_d133g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_e5ftr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wr3m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_jyg20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_p702y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_vpigb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_kv1ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fxci7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_78jet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_76o06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ib75y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2jfs7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_2ljmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_cvso0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_wadjy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_af5i2"]
+blend_mode = 2
+
+[node name="YouDied" type="Node2D"]
+script = ExtResource("1_7lpqs")
+
+[node name="BG" type="AnimatedSprite2D" parent="."]
+position = Vector2(962.25, 539.25)
+scale = Vector2(3.77202, 3.75436)
+sprite_frames = SubResource("SpriteFrames_ewumr")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 144.0
+offset_top = 282.0
+offset_right = 1777.0
+offset_bottom = 687.0
+theme_override_colors/font_color = Color(0.74902, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.133333, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 12
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("38_yhocy")
+theme_override_font_sizes/font_size = 200
+text = "SKILL ISSUE
+ TRY AGAIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="Button" parent="."]
+material = SubResource("CanvasItemMaterial_af5i2")
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("39_pwg54")
+volume_db = -12.0
+pitch_scale = 0.81
+autoplay = true
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

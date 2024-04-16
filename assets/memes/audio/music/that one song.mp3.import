@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cjl8k5bdawgds"
+path="res://.godot/imported/that one song.mp3-bd7f433562456afc6c097e046d688fbd.mp3str"
+
+[deps]
+
+source_file="res://assets/memes/audio/music/that one song.mp3"
+dest_files=["res://.godot/imported/that one song.mp3-bd7f433562456afc6c097e046d688fbd.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

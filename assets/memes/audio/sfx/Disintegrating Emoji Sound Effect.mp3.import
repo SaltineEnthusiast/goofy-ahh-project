@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cd15nfuo00oo7"
+path="res://.godot/imported/Disintegrating Emoji Sound Effect.mp3-01448256d2708f05c0fec66d5d7cf21e.mp3str"
+
+[deps]
+
+source_file="res://assets/memes/audio/sfx/Disintegrating Emoji Sound Effect.mp3"
+dest_files=["res://.godot/imported/Disintegrating Emoji Sound Effect.mp3-01448256d2708f05c0fec66d5d7cf21e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

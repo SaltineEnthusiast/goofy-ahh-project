@@ -1,0 +1,171 @@
+[gd_scene load_steps=13 format=3 uid="uid://112y111n4nfp"]
+
+[ext_resource type="Script" path="res://scenes/vault/main/vault.gd" id="1_syf3i"]
+[ext_resource type="FontFile" uid="uid://ct8xlyjlgpms5" path="res://assets/fonts/RAVIE.TTF" id="2_itadu"]
+[ext_resource type="AudioStream" uid="uid://o6wipu2puqm7" path="res://assets/memes/audio/sfx/vine boom sound.mp3" id="2_yv5nv"]
+[ext_resource type="AudioStream" uid="uid://cvkob1dhq0yb7" path="res://assets/memes/audio/sfx/Fire In The Hole Sound Effect.mp3" id="3_5eckh"]
+[ext_resource type="Theme" uid="uid://cbhog5hkho80u" path="res://assets/memes/godot stuff/lobotomy.tres" id="3_a3pkx"]
+[ext_resource type="Shader" path="res://assets/godot stuff/shaders/bulge.gdshader" id="4_byuit"]
+[ext_resource type="AudioStream" uid="uid://n7xbb1kpahao" path="res://assets/memes/audio/sfx/blood in the bath.wav" id="6_80qnr"]
+[ext_resource type="AudioStream" uid="uid://c71dk7ncdmjtw" path="res://assets/memes/audio/music/at the speed of light.mp3" id="7_k4v2l"]
+[ext_resource type="StyleBox" uid="uid://bnsxke4x118eh" path="res://assets/memes/godot stuff/anti_lobotomy_flat.tres" id="7_mbwwk"]
+[ext_resource type="Texture2D" uid="uid://bq66pmfmkvwih" path="res://assets/memes/images/images/extreme-demon.png" id="9_5bcwk"]
+[ext_resource type="Texture2D" uid="uid://dfksc56y0ie8i" path="res://assets/memes/images/images/normal-difficulty-geometry-dash-removebg-preview.png" id="10_7wp4f"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uc2gx"]
+shader = ExtResource("4_byuit")
+shader_parameter/center = Vector2(0.5, 0.5)
+shader_parameter/force = 0.11
+
+[node name="vault" type="Node2D"]
+script = ExtResource("1_syf3i")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 223.0
+theme_override_font_sizes/font_size = 80
+text = "Vault"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 825.0
+offset_top = 800.0
+offset_right = 1125.0
+offset_bottom = 933.0
+theme_override_font_sizes/font_size = 40
+text = "exit vault"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 250.0
+offset_right = 450.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 40
+text = "???"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 250.0
+offset_right = 900.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 40
+text = "vine boom sfx"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 1050.0
+offset_top = 250.0
+offset_right = 1350.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 40
+text = "racist music"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 1500.0
+offset_top = 250.0
+offset_right = 1800.0
+offset_bottom = 383.0
+theme_override_fonts/font = ExtResource("2_itadu")
+theme_override_font_sizes/font_size = 30
+text = "FREE ROBUX
+(REAL)"
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 490.0
+offset_right = 450.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 40
+text = "Did You Know?"
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 490.0
+offset_right = 900.0
+offset_bottom = 623.0
+theme = ExtResource("3_a3pkx")
+theme_override_font_sizes/font_size = 40
+text = "fire in the
+hole"
+
+[node name="Button10" type="Button" parent="."]
+offset_left = 1050.0
+offset_top = 490.0
+offset_right = 1350.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 40
+text = "guy plays coc"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("2_yv5nv")
+volume_db = 10.0
+bus = &"sfx"
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("3_5eckh")
+volume_db = 10.0
+bus = &"sfx"
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("6_80qnr")
+volume_db = 10.0
+bus = &"sfx"
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("7_k4v2l")
+volume_db = 10.0
+bus = &"music"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_uc2gx")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="Button9" type="Button" parent="."]
+visible = false
+offset_left = 1500.0
+offset_top = 800.0
+offset_right = 1800.0
+offset_bottom = 933.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("7_mbwwk")
+theme_override_styles/hover = ExtResource("7_mbwwk")
+theme_override_styles/pressed = ExtResource("7_mbwwk")
+theme_override_styles/disabled = ExtResource("7_mbwwk")
+theme_override_styles/focus = ExtResource("7_mbwwk")
+text = "turn off
+lobotomy"
+
+[node name="Extreme-demon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 540)
+scale = Vector2(2.1, 2.1)
+texture = ExtResource("9_5bcwk")
+
+[node name="normal" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 540)
+scale = Vector2(3, 3)
+texture = ExtResource("10_7wp4f")
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="B_Movie"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button10" to="." method="_on_button_10_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]

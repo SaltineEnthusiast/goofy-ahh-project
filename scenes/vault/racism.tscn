@@ -1,0 +1,101 @@
+[gd_scene load_steps=2 format=3 uid="uid://dujq483lt6tqm"]
+
+[ext_resource type="Script" path="res://scenes/vault/racism.gd" id="1_eicxw"]
+
+[node name="racism" type="Node2D"]
+script = ExtResource("1_eicxw")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 250.0
+offset_right = 450.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 30
+text = "we got to
+celebrate our 
+differences"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 250.0
+offset_right = 900.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 40
+text = "mother love
+me long time"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 825.0
+offset_top = 800.0
+offset_right = 1125.0
+offset_bottom = 933.0
+theme_override_font_sizes/font_size = 40
+text = "back"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 1050.0
+offset_top = 250.0
+offset_right = 1350.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 40
+text = "hate"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 1500.0
+offset_top = 250.0
+offset_right = 1800.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 40
+text = "uncle ruckus
+theme"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 500.0
+offset_right = 450.0
+offset_bottom = 634.0
+theme_override_font_sizes/font_size = 40
+text = "i'm Osama"
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 600.0
+offset_top = 500.0
+offset_right = 900.0
+offset_bottom = 634.0
+theme_override_font_sizes/font_size = 40
+text = "Nae N"
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 1050.0
+offset_top = 500.0
+offset_right = 1350.0
+offset_bottom = 634.0
+theme_override_font_sizes/font_size = 40
+text = "red sun in the 
+sky"
+
+[node name="Button9" type="Button" parent="."]
+offset_left = 1500.0
+offset_top = 500.0
+offset_right = 1800.0
+offset_bottom = 634.0
+theme_override_font_sizes/font_size = 40
+text = "donald trump"
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 223.0
+theme_override_font_sizes/font_size = 80
+text = "racist songs"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]

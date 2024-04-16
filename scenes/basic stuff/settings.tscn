@@ -1,0 +1,141 @@
+[gd_scene load_steps=8 format=3 uid="uid://bop7ics3oem8q"]
+
+[ext_resource type="Script" path="res://scenes/basic stuff/settings.gd" id="1_a81ca"]
+[ext_resource type="FontFile" uid="uid://ct8xlyjlgpms5" path="res://assets/fonts/RAVIE.TTF" id="2_j5fyy"]
+[ext_resource type="Theme" uid="uid://bacgw44syfs43" path="res://assets/godot stuff/themes/settings.tres" id="3_4nh0s"]
+[ext_resource type="Script" path="res://assets/scripts/settings/HSlider.gd" id="3_rf285"]
+[ext_resource type="AudioStream" uid="uid://waf0egjeiqt3" path="res://assets/audio/music/UI music 3.mp3" id="4_bqqae"]
+[ext_resource type="AudioStream" uid="uid://dum2wr8hhqfbu" path="res://assets/audio/music/Winter - Vivaldi.mp3" id="5_u8c85"]
+[ext_resource type="AudioStream" uid="uid://o6wipu2puqm7" path="res://assets/memes/audio/sfx/vine boom sound.mp3" id="6_y1trr"]
+
+[node name="settings" type="Node2D"]
+script = ExtResource("1_a81ca")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("2_j5fyy")
+theme_override_font_sizes/font_size = 80
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 475.0
+offset_top = 250.0
+offset_right = 1025.0
+offset_bottom = 383.0
+theme_override_fonts/font = ExtResource("2_j5fyy")
+theme_override_font_sizes/font_size = 50
+text = "current music:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 250.0
+offset_right = 450.0
+offset_bottom = 383.0
+theme = ExtResource("3_4nh0s")
+theme_override_font_sizes/font_size = 34
+text = "change menu
+music"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 810.0
+offset_top = 800.0
+offset_right = 1110.0
+offset_bottom = 933.0
+theme = ExtResource("3_4nh0s")
+theme_override_font_sizes/font_size = 34
+text = "back"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 800.0
+offset_right = 500.0
+offset_bottom = 933.0
+theme = ExtResource("3_4nh0s")
+theme_override_font_sizes/font_size = 34
+text = "sfx test"
+
+[node name="container" type="PanelContainer" parent="."]
+offset_left = 150.0
+offset_top = 400.0
+offset_right = 575.0
+offset_bottom = 543.0
+scale = Vector2(2, 2)
+
+[node name="sliders" type="VBoxContainer" parent="container"]
+layout_mode = 2
+
+[node name="master_L" type="Label" parent="container/sliders"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j5fyy")
+theme_override_font_sizes/font_size = 25
+text = "master volume"
+
+[node name="master" type="HSlider" parent="container/sliders"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("3_rf285")
+bus_name = "Master"
+
+[node name="Music_L" type="Label" parent="container/sliders"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j5fyy")
+theme_override_font_sizes/font_size = 25
+text = "Music volume"
+
+[node name="music" type="HSlider" parent="container/sliders"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("3_rf285")
+bus_name = "music"
+
+[node name="sfx_L" type="Label" parent="container/sliders"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j5fyy")
+theme_override_font_sizes/font_size = 25
+text = "sfx volume"
+
+[node name="sfx" type="HSlider" parent="container/sliders"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+script = ExtResource("3_rf285")
+bus_name = "sfx"
+
+[node name="ui music" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("4_bqqae")
+volume_db = 10.0
+bus = &"music"
+
+[node name="ui music2" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("5_u8c85")
+volume_db = 2.0
+bus = &"music"
+
+[node name="sfx test" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("6_y1trr")
+volume_db = 5.0
+bus = &"sfx"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="value_changed" from="container/sliders/master" to="." method="_on_master_value_changed"]
+[connection signal="value_changed" from="container/sliders/music" to="." method="_on_music_value_changed"]
+[connection signal="value_changed" from="container/sliders/sfx" to="." method="_on_sfx_value_changed"]

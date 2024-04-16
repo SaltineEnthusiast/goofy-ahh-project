@@ -1,0 +1,14 @@
+fonts folder is for font files
+
+images are for images and multi-image folders
+
+music is for music
+
+scripts is for .gd files outside the main tscn
+(example: game.gd stays next to game.tscn while other_game_funtion.gd gets put in the scripts folder)
+
+sfx is for sound effects
+
+shaders is for the .gdshader files
+
+memes folder is for assets that are not serious like vault assets, joke sfx, etc

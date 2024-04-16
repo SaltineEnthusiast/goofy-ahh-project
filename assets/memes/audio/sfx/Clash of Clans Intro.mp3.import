@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh4pcqp3uj1un"
+path="res://.godot/imported/Clash of Clans Intro.mp3-005503da6262fea7eabb268819da95fc.mp3str"
+
+[deps]
+
+source_file="res://assets/memes/audio/sfx/Clash of Clans Intro.mp3"
+dest_files=["res://.godot/imported/Clash of Clans Intro.mp3-005503da6262fea7eabb268819da95fc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

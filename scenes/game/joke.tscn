@@ -1,0 +1,623 @@
+[gd_scene load_steps=59 format=3 uid="uid://bj6bu3nf14sfn"]
+
+[ext_resource type="Script" path="res://assets/memes/godot stuff/Combat Stuff/battle_logic.gd" id="1_nsl6l"]
+[ext_resource type="Texture2D" uid="uid://dn7uha3jvpy63" path="res://assets/memes/images/multi images/Combat BG/frame_00_delay-0.03s.png" id="2_p2elg"]
+[ext_resource type="Texture2D" uid="uid://dne4w7lrmpuws" path="res://assets/memes/images/multi images/Combat BG/frame_02_delay-0.03s.png" id="3_70a7e"]
+[ext_resource type="Texture2D" uid="uid://bbpx64emd1stp" path="res://assets/memes/images/multi images/Combat BG/frame_04_delay-0.03s.png" id="4_5iykv"]
+[ext_resource type="Texture2D" uid="uid://civ3mohtjwoom" path="res://assets/memes/images/multi images/Combat BG/frame_06_delay-0.03s.png" id="5_iigcl"]
+[ext_resource type="Texture2D" uid="uid://cjqov4kfo2csq" path="res://assets/memes/images/multi images/Combat BG/frame_08_delay-0.03s.png" id="6_hx5pb"]
+[ext_resource type="Texture2D" uid="uid://dsht85p75qbvd" path="res://assets/memes/images/multi images/Combat BG/frame_10_delay-0.03s.png" id="7_lvf3m"]
+[ext_resource type="Texture2D" uid="uid://dc3i6qtq7mdti" path="res://assets/memes/images/multi images/Combat BG/frame_12_delay-0.03s.png" id="8_hm3cw"]
+[ext_resource type="Texture2D" uid="uid://vl13i0un4evb" path="res://assets/memes/images/multi images/Combat BG/frame_14_delay-0.03s.png" id="9_hc8m8"]
+[ext_resource type="Texture2D" uid="uid://dcs148cu8up7l" path="res://assets/memes/images/multi images/Combat BG/frame_16_delay-0.03s.png" id="10_8flwp"]
+[ext_resource type="Texture2D" uid="uid://kr3rlai3let0" path="res://assets/memes/images/multi images/Combat BG/frame_18_delay-0.03s.png" id="11_iaepa"]
+[ext_resource type="Texture2D" uid="uid://bhu5baf11i3v0" path="res://assets/memes/images/multi images/Combat BG/frame_20_delay-0.03s.png" id="12_axnqa"]
+[ext_resource type="Texture2D" uid="uid://bn8do6u68sy68" path="res://assets/memes/images/multi images/Combat BG/frame_22_delay-0.03s.png" id="13_88uu2"]
+[ext_resource type="Texture2D" uid="uid://d3vcil2np40ba" path="res://assets/memes/images/multi images/Combat BG/frame_24_delay-0.03s.png" id="14_vhmuq"]
+[ext_resource type="Texture2D" uid="uid://x77bfqfs812b" path="res://assets/memes/images/multi images/Combat BG/frame_26_delay-0.03s.png" id="15_hkob5"]
+[ext_resource type="Texture2D" uid="uid://drbgmjp5qabat" path="res://assets/memes/images/multi images/Combat BG/frame_28_delay-0.03s.png" id="16_bh655"]
+[ext_resource type="Texture2D" uid="uid://cjyeg0dqtawrv" path="res://assets/memes/images/multi images/Combat BG/frame_30_delay-0.03s.png" id="17_7ljx6"]
+[ext_resource type="Texture2D" uid="uid://bpyvjanue8wnj" path="res://assets/memes/images/multi images/Combat BG/frame_32_delay-0.03s.png" id="18_squkr"]
+[ext_resource type="Texture2D" uid="uid://0cp2qj1nlcjf" path="res://assets/memes/images/multi images/Combat BG/frame_34_delay-0.03s.png" id="19_0dwmj"]
+[ext_resource type="Texture2D" uid="uid://b5gg7jofkcbs1" path="res://assets/memes/images/multi images/Combat BG/frame_36_delay-0.03s.png" id="20_vjw0h"]
+[ext_resource type="Texture2D" uid="uid://dg6bir0yhuwn5" path="res://assets/memes/images/multi images/Combat BG/frame_37_delay-0.03s.png" id="21_4566o"]
+[ext_resource type="Texture2D" uid="uid://ca8fnyj7upqmv" path="res://assets/memes/images/multi images/Combat BG/frame_38_delay-0.03s.png" id="22_2bu75"]
+[ext_resource type="Texture2D" uid="uid://dhsvism68fg4c" path="res://assets/memes/images/multi images/Combat BG/frame_39_delay-0.03s.png" id="23_dugs5"]
+[ext_resource type="Texture2D" uid="uid://cjl78tr5i2foq" path="res://assets/memes/images/multi images/Combat BG/frame_40_delay-0.03s.png" id="24_ob4qf"]
+[ext_resource type="Texture2D" uid="uid://c6y384hux1eky" path="res://assets/memes/images/multi images/Combat BG/frame_41_delay-0.03s.png" id="25_tqo6u"]
+[ext_resource type="Texture2D" uid="uid://0xa7uhc5rugd" path="res://assets/memes/images/multi images/Combat BG/frame_42_delay-0.03s.png" id="26_4qf6l"]
+[ext_resource type="Texture2D" uid="uid://djjru0klvmtok" path="res://assets/memes/images/multi images/Combat BG/frame_43_delay-0.03s.png" id="27_kr6r6"]
+[ext_resource type="Texture2D" uid="uid://b8rngj4spkomq" path="res://assets/memes/images/multi images/Combat BG/frame_44_delay-0.03s.png" id="28_mssod"]
+[ext_resource type="Texture2D" uid="uid://c7w5kp2p85ymj" path="res://assets/memes/images/multi images/Combat BG/frame_45_delay-0.03s.png" id="29_vo7gy"]
+[ext_resource type="Texture2D" uid="uid://bockfvl4f1b0d" path="res://assets/memes/images/multi images/Combat BG/frame_46_delay-0.03s.png" id="30_fxwk3"]
+[ext_resource type="Texture2D" uid="uid://drsjtu8lgwqqs" path="res://assets/memes/images/multi images/Combat BG/frame_47_delay-0.03s.png" id="31_w68ru"]
+[ext_resource type="Texture2D" uid="uid://bv7ylwumlj4wb" path="res://assets/memes/images/multi images/Combat BG/frame_48_delay-0.03s.png" id="32_4fdgt"]
+[ext_resource type="Texture2D" uid="uid://dcbk3psnxtllt" path="res://assets/memes/images/multi images/Combat BG/frame_49_delay-0.03s.png" id="33_pynht"]
+[ext_resource type="Texture2D" uid="uid://cqbjvyga8e6i4" path="res://assets/memes/images/multi images/Combat BG/frame_50_delay-0.03s.png" id="34_rmuni"]
+[ext_resource type="Texture2D" uid="uid://cgxngwqia7m3a" path="res://assets/memes/images/multi images/Combat BG/frame_51_delay-0.03s.png" id="35_aqr8s"]
+[ext_resource type="Texture2D" uid="uid://erboblr407n6" path="res://assets/memes/images/multi images/Combat BG/frame_52_delay-0.03s.png" id="36_25je0"]
+[ext_resource type="Texture2D" uid="uid://c58ndlcyfcipj" path="res://assets/memes/images/multi images/Combat BG/frame_54_delay-0.03s.png" id="37_w1b52"]
+[ext_resource type="Texture2D" uid="uid://cl2lbicm3ndow" path="res://assets/memes/images/multi images/Combat BG/frame_56_delay-0.03s.png" id="38_yts8w"]
+[ext_resource type="FontFile" uid="uid://ct8xlyjlgpms5" path="res://assets/fonts/RAVIE.TTF" id="40_5ghp0"]
+[ext_resource type="Script" path="res://assets/memes/godot stuff/Combat Stuff/energy.gd" id="41_qhn0y"]
+[ext_resource type="Script" path="res://assets/memes/godot stuff/Combat Stuff/HpDisplay.gd" id="42_dotg4"]
+[ext_resource type="Script" path="res://assets/memes/godot stuff/Combat Stuff/Current Move.gd" id="43_7c6u8"]
+[ext_resource type="Texture2D" uid="uid://dfulnwpyqjdxp" path="res://assets/memes/images/images/Joe Biden.jpg" id="44_f16eb"]
+[ext_resource type="Script" path="res://assets/memes/godot stuff/Combat Stuff/Biden Buttons.gd" id="45_jh3lp"]
+[ext_resource type="Script" path="res://assets/memes/godot stuff/Combat Stuff/Mario Buttons.gd" id="46_ch3h3"]
+[ext_resource type="Texture2D" uid="uid://bn3a7a23bv8d2" path="res://assets/memes/images/images/Gangsta Mario.jpg" id="47_21rjp"]
+[ext_resource type="Texture2D" uid="uid://dl5yxf4pv1lh" path="res://assets/memes/images/images/White Obama.jpg" id="48_8byaj"]
+[ext_resource type="Texture2D" uid="uid://bu11hso2xj484" path="res://assets/images/images/energy bar/Low HP BG.png" id="48_d2xmw"]
+[ext_resource type="AudioStream" uid="uid://b26mvtnev7txs" path="res://assets/memes/audio/music/tidal wave.mp3" id="49_abcia"]
+[ext_resource type="Script" path="res://assets/scripts/Energy.gd" id="49_ofuoa"]
+[ext_resource type="Texture2D" uid="uid://b5l4ld11bkn2h" path="res://assets/images/images/energy bar/BG.png" id="50_rel2e"]
+[ext_resource type="Texture2D" uid="uid://1wxyyk1r6vpq" path="res://assets/images/images/energy bar/Bar.png" id="51_s5qrp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lp4yi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p2elg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_70a7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5iykv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iigcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hx5pb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lvf3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hm3cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hc8m8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8flwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_iaepa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_axnqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_88uu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vhmuq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hkob5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bh655")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7ljx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_squkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0dwmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vjw0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4566o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_2bu75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_dugs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ob4qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_tqo6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4qf6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_kr6r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mssod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_vo7gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fxwk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_w68ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_4fdgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_pynht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_rmuni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_aqr8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_25je0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_w1b52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_yts8w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_6yovh"]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kmd7c"]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kji2i"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_isbiq"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wav7t"]
+blend_mode = 1
+
+[node name="joke" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_top = -231.0
+offset_right = 1920.0
+offset_bottom = -8.0
+theme_override_font_sizes/font_size = 80
+text = "Epic Gameplay Is Here!!!!!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Combat" type="Node" parent="."]
+script = ExtResource("1_nsl6l")
+
+[node name="BG" type="AnimatedSprite2D" parent="Combat"]
+position = Vector2(962.25, 539.25)
+scale = Vector2(3.77202, 3.75436)
+sprite_frames = SubResource("SpriteFrames_lp4yi")
+autoplay = "default"
+frame_progress = 0.475681
+metadata/_edit_lock_ = true
+
+[node name="Finish" type="Button" parent="Combat"]
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 750.0
+offset_top = 190.0
+offset_right = 1220.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 50
+text = "Finish"
+
+[node name="Die" type="Button" parent="Combat"]
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 745.0
+offset_top = 710.0
+offset_right = 1216.0
+offset_bottom = 874.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 50
+text = "Self Destruct"
+
+[node name="Biden HP" type="Label" parent="Combat"]
+offset_left = 1516.0
+offset_top = 120.0
+offset_right = 1897.0
+offset_bottom = 221.0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.466667, 0.466667, 1)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 50
+text = "1000/1000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("42_dotg4")
+
+[node name="Mario HP" type="Label" parent="Combat"]
+offset_left = 1507.0
+offset_top = 600.0
+offset_right = 1922.0
+offset_bottom = 701.0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.466667, 0.466667, 1)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 50
+text = "600/600"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy HP" type="Label" parent="Combat"]
+offset_top = 397.0
+offset_right = 732.0
+offset_bottom = 468.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.376471, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 70
+text = "1200/1200"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Move" type="Label" parent="Combat"]
+offset_top = 1000.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 45
+text = "Mario: | Biden:"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("43_7c6u8")
+
+[node name="nuh uh" type="Label" parent="Combat"]
+offset_left = 750.0
+offset_top = 350.0
+offset_right = 1195.0
+offset_bottom = 391.0
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="Biden" type="Node" parent="Combat"]
+
+[node name="JoeBiden" type="Sprite2D" parent="Combat/Biden"]
+position = Vector2(1710, 322)
+texture = ExtResource("44_f16eb")
+flip_h = true
+
+[node name="Name" type="Label" parent="Combat/Biden"]
+offset_left = 1515.0
+offset_top = 40.0
+offset_right = 1884.0
+offset_bottom = 121.0
+theme_override_colors/font_color = Color(0, 0.682353, 0.631373, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.45098, 0.380392, 1)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 60
+text = "Joe Biden"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Biden Buttons" type="Node" parent="Combat"]
+script = ExtResource("45_jh3lp")
+
+[node name="Attack" type="Button" parent="Combat/Biden Buttons"]
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 140.0
+offset_right = 1525.0
+offset_bottom = 207.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Attack"
+
+[node name="Item" type="Button" parent="Combat/Biden Buttons"]
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 235.0
+offset_right = 1525.0
+offset_bottom = 302.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Item"
+
+[node name="Block" type="Button" parent="Combat/Biden Buttons"]
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 329.0
+offset_right = 1525.0
+offset_bottom = 396.0
+tooltip_text = "blocks damage
+gives extra 10% energy"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Block"
+
+[node name="Back" type="Button" parent="Combat/Biden Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1323.0
+offset_top = 330.0
+offset_right = 1524.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="Biden Blast" type="Button" parent="Combat/Biden Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1289.0
+offset_top = 142.0
+offset_right = 1523.0
+offset_bottom = 209.0
+tooltip_text = "damage: 100
+energy cost: 20%"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Biden Blast"
+
+[node name="Dementia Dimension" type="Button" parent="Combat/Biden Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1250.0
+offset_top = 236.0
+offset_right = 1595.0
+offset_bottom = 303.0
+tooltip_text = "special ability: makes everyone forget stuff
+energy cost: ???%"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 25
+text = "Dementia Dimension"
+
+[node name="Obama Chicken" type="Button" parent="Combat/Biden Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1267.0
+offset_top = 143.0
+offset_right = 1554.0
+offset_bottom = 208.0
+tooltip_text = "heal: 150
+mario heal: 100
+energy cost: 10%"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 20
+text = "Obama Fried Chicken"
+
+[node name="Biden Select" type="Button" parent="Combat/Biden Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_kmd7c")
+offset_left = 1839.0
+offset_top = 209.0
+offset_right = 1904.0
+offset_bottom = 435.0
+theme_override_font_sizes/font_size = 100
+text = "<"
+
+[node name="Mario Buttons" type="Node" parent="Combat"]
+script = ExtResource("46_ch3h3")
+
+[node name="Attack" type="Button" parent="Combat/Mario Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 627.0
+offset_right = 1525.0
+offset_bottom = 694.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Attack"
+
+[node name="Item" type="Button" parent="Combat/Mario Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 722.0
+offset_right = 1525.0
+offset_bottom = 789.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Item"
+
+[node name="Block" type="Button" parent="Combat/Mario Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 816.0
+offset_right = 1525.0
+offset_bottom = 883.0
+tooltip_text = "blocks damage
+gives extra 10% energy"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Block"
+
+[node name="Back" type="Button" parent="Combat/Mario Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1320.0
+offset_top = 817.0
+offset_right = 1525.0
+offset_bottom = 884.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="AK 47" type="Button" parent="Combat/Mario Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1300.0
+offset_top = 627.0
+offset_right = 1530.0
+offset_bottom = 694.0
+tooltip_text = "damage: 100-300
+energy cost: 40%"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "AK-47"
+
+[node name="Fat Blunt" type="Button" parent="Combat/Mario Buttons"]
+visible = false
+material = SubResource("CanvasItemMaterial_6yovh")
+offset_left = 1300.0
+offset_top = 627.0
+offset_right = 1520.0
+offset_bottom = 692.0
+tooltip_text = "special item: heals 100 and makes mario take 10 damage 
+from enemy but with a cost.
+energy cost: 10%"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 30
+text = "Fat Blunt"
+
+[node name="Mario Select" type="Button" parent="Combat/Mario Buttons"]
+material = SubResource("CanvasItemMaterial_kmd7c")
+offset_left = 1842.0
+offset_top = 707.0
+offset_right = 1907.0
+offset_bottom = 933.0
+theme_override_font_sizes/font_size = 100
+text = "<"
+
+[node name="Mario" type="Node" parent="Combat"]
+
+[node name="GangstaMario" type="Sprite2D" parent="Combat/Mario"]
+position = Vector2(1711, 812)
+scale = Vector2(0.992734, 1.07652)
+texture = ExtResource("47_21rjp")
+flip_h = true
+
+[node name="Name" type="Label" parent="Combat/Mario"]
+offset_left = 1311.0
+offset_top = 528.0
+offset_right = 1910.0
+offset_bottom = 609.0
+theme_override_colors/font_color = Color(0, 0.682353, 0.631373, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.45098, 0.380392, 1)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 60
+text = "Gangsta Mario"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy" type="Node" parent="Combat"]
+
+[node name="WhiteObama" type="Sprite2D" parent="Combat/Enemy"]
+material = SubResource("CanvasItemMaterial_kji2i")
+position = Vector2(370, 691)
+scale = Vector2(1.82444, 1.92389)
+texture = ExtResource("48_8byaj")
+
+[node name="Name" type="Label" parent="Combat/Enemy"]
+offset_left = 10.0
+offset_top = 301.0
+offset_right = 726.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(1, 0.682353, 0.631373, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.45098, 0.380392, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 80
+text = "White Obama"
+
+[node name="Energy" type="Node" parent="Combat"]
+script = ExtResource("49_ofuoa")
+
+[node name="LowHpBg" type="Sprite2D" parent="Combat/Energy"]
+position = Vector2(216, 163)
+scale = Vector2(0.2, 0.15)
+texture = ExtResource("48_d2xmw")
+
+[node name="Bg" type="Sprite2D" parent="Combat/Energy"]
+material = SubResource("CanvasItemMaterial_isbiq")
+position = Vector2(216, 163)
+scale = Vector2(0.2, 0.15)
+texture = ExtResource("50_rel2e")
+
+[node name="Bar" type="Sprite2D" parent="Combat/Energy"]
+material = SubResource("CanvasItemMaterial_wav7t")
+position = Vector2(216, 163)
+scale = Vector2(0.2, 0.15)
+texture = ExtResource("51_s5qrp")
+
+[node name="energy" type="Label" parent="Combat/Energy"]
+offset_left = 144.0
+offset_top = 141.0
+offset_right = 283.0
+offset_bottom = 192.0
+tooltip_text = "if your energy goes under 0% you start taking damage
+you regain energy each turn"
+mouse_filter = 1
+theme_override_colors/font_color = Color(0.498039, 0.658824, 1, 1)
+theme_override_colors/font_outline_color = Color(0.254902, 0.47451, 1, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("40_5ghp0")
+theme_override_font_sizes/font_size = 50
+text = "100%"
+horizontal_alignment = 1
+script = ExtResource("41_qhn0y")
+
+[node name="Dap Do Do Do" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("49_abcia")
+volume_db = -15.0
+autoplay = true
+bus = &"music"
+
+[connection signal="pressed" from="Combat/Finish" to="Combat" method="_on_finish_pressed"]
+[connection signal="pressed" from="Combat/Die" to="Combat/Biden Buttons" method="_on_die_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Attack" to="Combat/Biden Buttons" method="_on_attack_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Item" to="Combat/Biden Buttons" method="_on_item_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Block" to="Combat" method="_on_block_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Back" to="Combat/Biden Buttons" method="_on_back_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Biden Blast" to="Combat" method="_on_biden_blast_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Dementia Dimension" to="Combat" method="_on_dementia_dimension_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Obama Chicken" to="Combat" method="_on_obama_chicken_pressed"]
+[connection signal="pressed" from="Combat/Biden Buttons/Biden Select" to="Combat/Biden Buttons" method="_on_biden_select_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/Attack" to="Combat/Mario Buttons" method="_on_attack_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/Item" to="Combat/Mario Buttons" method="_on_item_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/Block" to="Combat" method="_on_mario_block_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/Back" to="Combat/Mario Buttons" method="_on_back_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/AK 47" to="Combat" method="_on_ak_47_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/Fat Blunt" to="Combat" method="_on_fat_blunt_pressed"]
+[connection signal="pressed" from="Combat/Mario Buttons/Mario Select" to="Combat/Mario Buttons" method="_on_mario_select_pressed"]

@@ -1,0 +1,343 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtx0sfs22haej"]
+
+[ext_resource type="Script" path="res://scenes/vault/DidYouKnow.gd" id="1_amivi"]
+[ext_resource type="Texture2D" uid="uid://df627sydtvdjw" path="res://assets/memes/images/images/foxy.jpg" id="2_g73ib"]
+[ext_resource type="AudioStream" uid="uid://cjl8k5bdawgds" path="res://assets/memes/audio/music/that one song.mp3" id="3_m46lh"]
+
+[node name="DidYouKnow" type="Node2D"]
+script = ExtResource("1_amivi")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -85.0
+offset_top = -3.0
+offset_right = 2013.0
+offset_bottom = 7737.0
+theme_override_font_sizes/font_size = 60
+text = "
+
+You can leave by pressing escape
+
+NARRATOR:
+(Black screen with text; The sound of buzzing bees can be heard)
+According to all known laws of aviation, there is no way a bee
+should be able to fly. Its wings are too small to get its fat little 
+body off the ground. The bee, of course, flies anyway because 
+bees don't care what humans think is impossible.
+BARRY BENSON:
+(Barry is picking out a shirt)
+Yellow, black. Yellow, black. Yellow, black. Yellow, black.
+Ooh, black and yellow! Let's shake it up a little.
+JANET BENSON:
+Barry! Breakfast is ready!
+BARRY:
+Coming!
+ :
+Hang on a second.
+(Barry uses his antenna like a phone)
+ :
+Hello?
+ADAM FLAYMAN:
+
+(Through phone)
+- Barry?
+BARRY:
+- Adam?
+ADAM:
+- Can you believe this is happening?
+BARRY:
+- I can't. I'll pick you up.
+(Barry flies down the stairs)
+ :
+MARTIN BENSON:
+Looking sharp.
+JANET:
+Use the stairs. Your father
+paid good money for those.
+BARRY:
+Sorry. I'm excited.
+MARTIN:
+Here's the graduate.
+We're very proud of you, son.
+ :
+A perfect report card, all B's.
+JANET:
+Very proud.
+(Rubs Barry's hair)
+BARRY=
+Ma! I got a thing going here.
+JANET:
+- You got lint on your fuzz.
+BARRY:
+- Ow! That's me!
+
+JANET:
+- Wave to us! We'll be in row 118,000.
+- Bye!
+(Barry flies out the door)
+JANET:
+Barry, I told you,
+stop flying in the house!
+(Barry drives through the hive,
+and is waved at by Adam who is reading a
+newspaper)
+BARRY==
+- Hey, Adam.
+ADAM:
+- Hey, Barry.
+(Adam gets in Barry's car)
+ :
+- Is that fuzz gel?
+BARRY:
+- A little. Special day, graduation.
+ADAM:
+Never thought I'd make it.
+(Barry pulls away from the house and continues driving)
+BARRY:
+Three days grade school,
+three days high school...
+ADAM:
+Those were awkward.
+BARRY:
+Three days college. I'm glad I took
+a day and hitchhiked around the hive.
+ADAM==
+You did come back different.
+(Barry and Adam pass by Artie, who is jogging)
+ARTIE:
+- Hi, Barry!
+
+
+
+
+
+
+
+
+
+You can still leave
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I respect your commitment to watch this for however long you 
+needed but like, why?
+Anyways, did you know that 1+1=2?
+I know, it's amazing how complex this math is 
+but I'm sure you could
+understand it if you study enough
+
+
+
+
+
+
+
+
+
+
+
+Thoughts on Jesus Christ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Why are you still here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The secret is done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Play Five Nights At Northwood or else
+
+\"wait, i didn't approve of this self advertising\" -Vinh"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 30
+text = "press esc to leave"
+
+[node name="Foxy" type="Sprite2D" parent="."]
+position = Vector2(966, 26700)
+scale = Vector2(5.26255, 0.618557)
+texture = ExtResource("2_g73ib")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("3_m46lh")
+volume_db = 10.0
+autoplay = true
+bus = &"music"

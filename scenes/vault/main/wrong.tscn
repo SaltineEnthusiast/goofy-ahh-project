@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://d8c7jhe13jlh"]
+
+[ext_resource type="Script" path="res://scenes/vault/main/wrong.gd" id="1_1thqy"]
+[ext_resource type="Theme" uid="uid://bacgw44syfs43" path="res://assets/godot stuff/themes/settings.tres" id="2_e0wi2"]
+
+[sub_resource type="FontVariation" id="FontVariation_mdx46"]
+
+[node name="wrong" type="Node2D"]
+script = ExtResource("1_1thqy")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 223.0
+theme_override_font_sizes/font_size = 80
+text = "Wrong password"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 555.0
+offset_right = 1100.0
+offset_bottom = 688.0
+theme = ExtResource("2_e0wi2")
+theme_override_fonts/font = SubResource("FontVariation_mdx46")
+theme_override_font_sizes/font_size = 40
+text = "ok"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]

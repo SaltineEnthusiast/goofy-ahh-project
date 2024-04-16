@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7uog2xgh7tiq"]
+
+[ext_resource type="Script" path="res://scenes/vault/zoro/zoro_2.gd" id="1_78rkw"]
+[ext_resource type="AudioStream" uid="uid://cd15nfuo00oo7" path="res://assets/memes/audio/sfx/Disintegrating Emoji Sound Effect.mp3" id="2_310md"]
+
+[node name="zoro2" type="Node2D"]
+script = ExtResource("1_78rkw")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 223.0
+theme_override_font_sizes/font_size = 80
+text = "You have been jumpscared"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 540.0
+offset_right = 750.0
+offset_bottom = 673.0
+theme_override_font_sizes/font_size = 40
+text = "nuh uh"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 1150.0
+offset_top = 540.0
+offset_right = 1450.0
+offset_bottom = 673.0
+theme_override_font_sizes/font_size = 40
+text = "AHHHH!"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("2_310md")
+volume_db = 10.0
+bus = &"sfx"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

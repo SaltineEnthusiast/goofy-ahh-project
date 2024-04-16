@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://n7xbb1kpahao"
+path="res://.godot/imported/blood in the bath.wav-3b7c4f076d89f82a54ddb9549d5394c8.sample"
+
+[deps]
+
+source_file="res://assets/memes/audio/sfx/blood in the bath.wav"
+dest_files=["res://.godot/imported/blood in the bath.wav-3b7c4f076d89f82a54ddb9549d5394c8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=1
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
